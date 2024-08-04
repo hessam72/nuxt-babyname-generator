@@ -1,0 +1,1 @@
+# nuxt-babyname-generator
