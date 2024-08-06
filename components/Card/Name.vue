@@ -5,10 +5,9 @@ interface NameProps {
 }
 const props = defineProps<NameProps>();
 
-const emit = defineEmits(["remove"]);
-
+const emit = defineEmits(["removeIt"]);
 const removeName = () => {
-  emit("remove", props.index);
+  emit("removeIt", props.index);
 };
 </script>
 
@@ -33,9 +32,11 @@ const removeName = () => {
 
 .card p {
   position: absolute;
-  top: -29%;
-  left: 92.5%;
+
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.178);
+
+  color: #fff;
+  top: -19%;
+  left: 91%;
 }
 </style>

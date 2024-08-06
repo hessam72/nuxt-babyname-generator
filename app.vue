@@ -70,7 +70,7 @@ const optionsArray = [
         v-for="(name, index) in selectedNames"
         :key="name"
         :name="name"
-        @remove="() => removeName(index)"
+        @removeIt="() => removeName(index)"
         :index="index"
       />
     </div>
